@@ -1,0 +1,141 @@
+/* DEBUT DU RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*FIN DU RESET*/
+
+*{
+    box-sizing: border-box;/* ça bloque l'élément, le recentre et fait une marge*/
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+
+}
+
+body{
+    background-image:linear-gradient(rgb(23, 73, 0), rgb(3, 182, 3));
+}
+
+header{
+    background-image:linear-gradient(rgb(23, 37, 22), rgb(28, 88, 0));
+}
+
+nav{
+    background-color: rgb(0, 15, 0);
+
+}
+
+    nav a{
+        text-decoration:none;
+    }
+
+h1{
+    font-size:70px;
+    color:#091a07;
+    font-family: 'Slabo', serif;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 400;
+}
+
+h2{
+    font-size:50px;
+    color:#3fad30;
+    font-weight: bold;
+    font-family: 'Slabo', serif;
+    padding: 20px;
+}
+
+h3{
+    font-size: 22px;
+    color:#3fad30;
+    padding: 15px;
+    font-family: 'Slabo', serif;
+}
+
+h5{
+    font-size: 85px;
+    color:#1bc404;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Slabo', serif;
+
+
+}
+
+blockquote{
+    font-style: italic;
+    font-size: 120%;
+}
+
+strong{
+    font-weight: bold;
+}
+
+main{
+background-color:rgb(77, 77, 77);
+width: 1000px;
+margin: 0 auto;
+}
+
+aside{
+    height:300px;
+    background-color: #051404;
+}
+
+section{
+    margin-top: 50px;
+    padding: 20px;
+}
+
+footer{
+    background-color: black;
+    height: 30px;
+}
+
+
+
+
+
+
