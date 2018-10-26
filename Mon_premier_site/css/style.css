@@ -27,7 +27,11 @@ time, mark, audio, video {
 
 
 body{
-    background-image:linear-gradient(rgb(19, 58, 0), rgb(0, 129, 0));
+    /*background-image:linear-gradient(rgb(19, 58, 0), rgb(0, 129, 0));*/
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
     font-family: 'Titillium Web', sans-serif;
     color: white;
 }
@@ -53,7 +57,7 @@ header{
 
     #rs a{
         font-size: 30px;
-        color: rgb(151, 252, 0);
+        color: rgb(127, 255, 110);
         display: block;
         text-align: center;
         padding: 15px 30px 0 0;
@@ -61,8 +65,9 @@ header{
     }
 
         #rs a:hover{
-            font-size: 60px;
+            font-size: 50px;
             transition: 0.8s;
+            color: rgb(207, 250, 178);
         }
 
 /* FIN HEADER */
@@ -146,9 +151,20 @@ strong{
 
 main{
 background-color:rgb(0, 32, 1);
+box-shadow: 5px 5px 50px #000;
 width: 1200px;
 margin: 0 auto;
 border: 1px solid black;
+}
+
+aside{
+    height:300px;
+    background-color: #051404;
+}
+
+section{
+    margin-top: 50px;
+    padding: 20px;
 }
 
 /***************SELECTEURS***************/
@@ -223,8 +239,8 @@ section.sirene{
 }
 
 .image{
-    margin: 0 auto;
-    display: block;
+    width: 250px;
+    margin-left: 100px;
     border: 4px solid black;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 
@@ -235,7 +251,8 @@ section.sirene{
 }
 
 .rotation{
-    margin: 0 auto;
+    width: 250px;
+    margin-left: 100px;
     display: block;
     border: 4px solid black;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -250,15 +267,234 @@ section.sirene{
 
 /******************* FIN PAGE IMAGE *****************/
 
-aside{
-    height:300px;
-    background-color: #051404;
+/********************** POSITION **********************/
+
+.razer{
+    margin: 0 auto;
+    width: 500px;
+    background: #0c5807;
+    text-align:center;
+    line-height: 180px;
+    font-size:50px;
+    font-style: italic;
+    color: rgb(71, 255, 47);
 }
 
-section{
-    margin-top: 50px;
-    padding: 20px;
+.relative{
+    background: green;
+    width: 500px;
+    height:500px;
+    position: relative;
+    bottom: 50px;
+    margin: 0 auto;
 }
+
+.relative div{
+    position: absolute;
+    bottom:10px;
+    width: 50px;
+    height:50px;
+    background: #5cfd4a;
+}
+
+.trente{
+    width: 30%;
+    padding: 20px;
+    font-size: 22px;
+    background:#0c5807;
+    font-weight:bold;
+}
+
+.cinquante{
+    width: 50%;
+    padding: 20px;
+    font-size: 22px;
+    background: #1bc404;
+    font-weight: bold;
+    margin-top: 10px;
+}
+ .cent{
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    background: #6dfd5d;
+    font-weight: bold;
+    margin-top: 10px;
+ }
+
+ .carre{
+     width: 170px;
+     height: 170px;
+     background: lightgreen;
+     border: 3px solid #0c5807;
+     margin:10px;
+     float: left;
+     text-align: center;
+     font-size: 25px;
+     color: black;
+     line-height: 150px;
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+ }
+
+ .carre:hover {
+    background-color:rgb(0, 32, 1);
+     border: 15px solid limegreen;
+     transition: 0.8s;
+     transform: rotate(45deg);
+     border-radius: 90px;
+ }
+
+.float2{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.rect{
+    height: 40px;
+    background: rgb(121, 248, 121);
+}
+
+.c1, .c2, .c3, .c4{
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+.c1{
+    background: #093f05
+}
+
+.c2{
+    background: #139202;
+}
+
+.c3{
+    background: #339227;
+}
+
+.c4{
+    background: #30b921;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Le flex*/
+.flex{
+    display: flex;
+    /* justify-content: space-around; les éléments s'affichent avec un espace egal autour d'eux*/
+    justify-content: space-around;
+    flex-direction: row;/* s'inverse sur la rangée*/
+}
+
+.flex div{
+    width: 150px;
+    height: 150px;
+    background: lightgreen;
+    border: 3px solid #0c5807;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+
+/********************** ZONING *********************************/
+/* zoning 1*/
+.contenu{
+    border: 4px solid black;
+    width: 100%;
+    height:510px;
+    margin: 0;
+    padding: 0;
+}
+
+.haut{
+    height: 50px;
+    width: 100%;
+    background: #1e910a;
+}
+
+.gauche{
+    height: 450px;
+    width: 30%; 
+    background: #38a02a;
+    float: left;
+}
+
+.droite{
+    height: 450px;
+    width:70%;
+    background: #57af2f;
+    float: right;
+}
+
+/* zoning 2*/
+.hb1{
+    height: 50px;
+    width: 100%;
+    background: #1e910a;
+}
+.d1{
+    height: 450px;
+    width:20%;
+    background: #38a02a;
+    float: right;
+}
+
+.m1{
+    height: 450px;
+    width: 60%; 
+    background: #57af2f;
+    float: left;  
+}
+.g1{
+    height: 450px;
+    width: 20%; 
+    background: #38a02a;
+    float: left;
+}
+
+/* zoning 3 */
+.g2{
+    height: 450px;
+    width: 50%; 
+    background: #57af2f;
+    float: left;
+}
+
+.d2{
+    height: 450px;
+    width:50%;
+    background: #38a02a;
+    float: right;
+}
+
+.hb2{
+    height: 50px;
+    width: 100%;
+    background: #1e910a;
+    clear:both;
+}
+
+/* zoning 4*/   
+
+
+
+/********************* BAS DE PAGE ******************************/
+button{
+    position: fixed;
+    background: transparent;
+    right: 20px;
+    cursor: pointer;
+    font-size: 350%;
+    color: rgb(39, 255, 1);
+    border: none;
+    bottom: 40px;
+}
+    button:hover{
+        color: rgb(184, 253, 81);
+        transition: 0.8s;
+    }
 
 footer{
     background-color: black;
