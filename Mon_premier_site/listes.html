@@ -1,31 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="zoning html css">
+    <meta name="author" content="Sonia Bougamha">
+    <meta name="description" content="Tout un récapitulatif sur CSS et HTML">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- fontawesome en ligne-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font family en ligne-->
+    <link rel="stylesheet" <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!--Font awesome en local-->
+    <title>Mon premier site</title>
+</head>
+
 <body>
-        <header>
-             <div id="logo">
-                 <a href="index.html" target="blank"> <img src="img/logo_360.png" alt="logo html css"></a>
-             </div>
-     
-             <h1>Mon premier site en HTML & CSS</h1>
-     
-             <div id="rs">
-                 <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                 <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                 <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-             </div>
-             <div class="clear"></div>
-        </header>
-     
-         <nav>
-             <a href="index.html">Index</a>
-             <a href="textes.html">Texte</a>
-             <a href="selecteurs.html">Selecteurs</a>
-             <a href="images.html">Images</a>
-             <a href="positions.html">Positions</a>
-             <a href="zonings.html">Zonings</a>
-             <a href="listes.html" class="activ">Listes</a>
-             <a href="liens_menus.html">Lien & menus</a>
-             <a href="tableaux.html">Tableaux</a>
-             <a href="formulaires.html">Formulaires</a>
-             <a href="multimedias.html">Multimedia</a>
-             <a href="animations.html">Animation</a>
-             <a href="fancy_box.html">Fancy Box</a>
-         </nav>
+    <header>
+        <div id="logo">
+            <a href="index.html" target="blank">
+                <img src="img/logo_360.png" alt="logo html css">
+            </a>
+        </div>
+
+        <h1>Mon premier site en HTML & CSS</h1>
+
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+    <nav>
+        <a href="index.html">Index</a>
+        <a href="textes.html">Texte</a>
+        <a href="selecteurs.html">Selecteurs</a>
+        <a href="images.html">Images</a>
+        <a href="positions.html">Positions</a>
+        <a href="zonings.html">Zonings</a>
+        <a href="listes.html" class="activ">Listes</a>
+        <a href="liens_menus.html">Lien & menus</a>
+        <a href="tableaux.html">Tableaux</a>
+        <a href="formulaires.html">Formulaires</a>
+        <a href="multimedias.html">Multimedia</a>
+        <a href="animations.html">Animation</a>
+        <a href="fancy_box.html">Fancy Box</a>
+    </nav>
+
+    <main>
+        <h2>Les listes</h2>
+
+        <section class="contenair">
+            <p>Les listes ul : non ordonnées</p>
+            <br>
+            <ul class="fruit">
+                <li>
+                    <i class="fas fa-arrow-right"></i> Pommes</li>
+                <li>
+                    <i class="fas fa-arrow-right"></i> Cerises</li>
+                <li>
+                    <i class="fas fa-arrow-right"></i> Abricots</li>
+            </ul>
+        </section>
+
+        <section class="contenair">
+
+            <p>Listes imbriquées</p>
+<br>
+            <ul>
+                <li class="continent">
+                    <i class="fas fa-arrow-right"></i>Europe
+                </li>
+                <ul>
+                    <li class="pays"> Angleterre</li>
+                    <li class="pays"> Espagne</li>
+                    <li class="pays"> Italie</li>
+                </ul>
+                </li>
+<br>
+                <li class="continent">
+                    <i class="fas fa-arrow-right"></i>Asie
+                </li>
+                <ul>
+                    <li class="pays"> Japon</li>
+                    <li class="pays"> Thaïlande</li>
+                    <li class="pays"> Inde</li>
+                </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contenair">          
+            <p>Liste ol : ordonnées</p>
+<br> 
+            <ol>
+                <li>HTML / CSS</li>
+                <li>PHP / SQL</li>
+                <li>JS / JQUERY</li>
+            </ol>
+
+        </section>
+
+        <section class="contenair">
+            <p>Listes de définitions</p>
+<br>
+            <dl>
+                <dt> F </dt>
+                <dd> France</dd>
+                <dd> Finlande</dd>
+            </dl>
+        </section>
+    </main>
+
+    <a href="#logo">
+        <button type="button">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"> </i>
+        </button>
+    </a>
+
+</body>
+
+</html>

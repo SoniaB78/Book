@@ -397,8 +397,8 @@ section.sirene{
     font-size: 50px;
     color: black;
 }
-
-/********************** ZONING *********************************/
+/********************** FIN POSITION *********************************/
+/**************************** ZONING *********************************/
 /* zoning 1*/
 .contenu{
     border: 4px solid black;
@@ -476,11 +476,39 @@ section.sirene{
     clear:both;
 }
 
-/* zoning 4*/   
+/* zoning 4   pas fini!!!  */   
 
 
+/************************* LES LISTES ******************************/
 
-/********************* BAS DE PAGE ******************************/
+.contenair{
+    margin: 50px;
+
+}
+.fruit li{
+    list-style: none;
+    display: inline;
+}
+
+.fa-arrow-right{
+    color: lightgreen;
+}
+.continent{
+    list-style: none;
+    transition-duration: 0.5s;
+}
+
+.pays{
+    list-style: circle;
+    transition-duration: 0.5s;
+}
+
+.pays:hover, .continent:hover{
+    font-size:30px;
+}
+
+
+/************************* BAS DE PAGE ******************************/
 button{
     position: fixed;
     background: transparent;
