@@ -1,20 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="zoning html css">
+    <meta name="author" content="Sonia Bougamha">
+    <meta name="description" content="Tout un récapitulatif sur CSS et HTML">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- fontawesome en ligne-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font family en ligne-->
+    <link rel="stylesheet" <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!--Font awesome en local-->
+    <title>Mon premier site</title>
+</head>
+
 <body>
-        <header>
-             <div id="logo">
-                 <a href="index.html" target="blank"> <img src="img/logo_360.png" alt="logo html css"></a>
-             </div>
-     
-             <h1>Mon premier site en HTML & CSS</h1>
-     
-             <div id="rs">
-                 <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                 <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                 <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-             </div>
-             <div class="clear"></div>
-        </header>
-     
-         <nav>
+    <header>
+        <div id="logo">
+            <a href="index.html" target="blank">
+                <img src="img/logo_360.png" alt="logo html css">
+            </a>
+        </div>
+
+        <h1>Mon premier site en HTML & CSS</h1>
+
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+        <nav>
              <a href="index.html">Index</a>
              <a href="textes.html">Texte</a>
              <a href="selecteurs.html">Selecteurs</a>
@@ -29,3 +60,71 @@
              <a href="animations.html">Animation</a>
              <a href="fancy_box.html">Fancy Box</a>
          </nav>
+
+        <main>
+
+            <table>
+
+                <caption><i class="fa fa-plane" aria-hidden="true"> Vols Paris - Rome </i></caption>
+
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>02/08/2019</th>
+                        <th>03/08/2019</th>
+                        <th>05/08/2019</th>
+                    </tr>
+                </thead>
+
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td>02/08/2019</td>
+                        <td>03/08/2019</td>
+                        <td>05/08/2019</td>
+                    </tr>
+                </tfoot>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Air France</td>
+                        <td>Départ 10h - Arrivée 13h</td>
+                        <td>Départ 15h - Arrivée 18h</td>
+                        <td>Départ 17h - Arrivée 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>200€</td>
+                        <td>180€</td>
+                        <td>170€</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Alitalia</td>
+                        <td>Départ 6h - Arrivée 9h</td>
+                        <td>Départ 13h - Arrivée 16h</td>
+                        <td>Départ 21h - Arrivée 00h</td>
+                    </tr>
+
+                    <tr>
+                        <td>120€</td>
+                        <td>250€</td>
+                        <td>100€</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <a href="#logo">
+                <button type="button">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"> </i>
+                </button>
+            </a>
+            
+    <footer>
+
+    </footer>
+</body>
+        
+</html>

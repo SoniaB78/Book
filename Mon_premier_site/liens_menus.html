@@ -1,31 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="zoning html css">
+    <meta name="author" content="Sonia Bougamha">
+    <meta name="description" content="Tout un récapitulatif sur CSS et HTML">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- fontawesome en ligne-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font family en ligne-->
+    <link rel="stylesheet" <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!--Font awesome en local-->
+    <title>Mon premier site</title>
+</head>
+
 <body>
-        <header>
-             <div id="logo">
-                 <a href="index.html" target="blank"> <img src="img/logo_360.png" alt="logo html css"></a>
-             </div>
-     
-             <h1>Mon premier site en HTML & CSS</h1>
-     
-             <div id="rs">
-                 <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                 <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                 <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-             </div>
-             <div class="clear"></div>
-        </header>
-     
-         <nav>
-             <a href="index.html">Index</a>
-             <a href="textes.html">Texte</a>
-             <a href="selecteurs.html">Selecteurs</a>
-             <a href="images.html">Images</a>
-             <a href="positions.html">Positions</a>
-             <a href="zonings.html">Zonings</a>
-             <a href="listes.html">Listes</a>
-             <a href="liens_menus.html" class="activ">Lien & menus</a>
-             <a href="tableaux.html">Tableaux</a>
-             <a href="formulaires.html">Formulaires</a>
-             <a href="multimedias.html">Multimedia</a>
-             <a href="animations.html">Animation</a>
-             <a href="fancy_box.html">Fancy Box</a>
-         </nav>
+    <header>
+        <div id="logo">
+            <a href="index.html" target="blank">
+                <img src="img/logo_360.png" alt="logo html css">
+            </a>
+        </div>
+
+        <h1>Mon premier site en HTML & CSS</h1>
+
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+    <nav>
+        <a href="index.html">Index</a>
+        <a href="textes.html">Texte</a>
+        <a href="selecteurs.html">Selecteurs</a>
+        <a href="images.html">Images</a>
+        <a href="positions.html">Positions</a>
+        <a href="zonings.html">Zonings</a>
+        <a href="listes.html">Listes</a>
+        <a href="liens_menus.html" class="activ">Lien & menus</a>
+        <a href="tableaux.html">Tableaux</a>
+        <a href="formulaires.html">Formulaires</a>
+        <a href="multimedias.html">Multimedia</a>
+        <a href="animations.html">Animation</a>
+        <a href="fancy_box.html">Fancy Box</a>
+    </nav>
+
+    <main>
+        <h2>LES LIENS ET LES MENUS</h2>
+
+        <section class="ancre">
+            <hr>
+            <a href="#alien">Les liens</a>
+            <a href="#amenu">Menus</a>
+            <a href="#amenuderoulant">Menu déroulant</a>
+            <hr>
+        </section>
+
+        <section class="contenair">
+            <h3 id="alien"> Les liens</h3>
+
+            <p>
+                <a href="https://codepen.io/#"> CodePen</a> is a social developpement environment for front-en designers and developpers. 
+            <br><br>
+                <a href="https://www.google.com/">Google</a> le moteur de recherche. 
+            <br><br>
+                <a href="cv.pdf">Télécharger mon CV</a>
+            <br><br>
+                <a href="cv.pdf" title="visualiser mon cv" target="blank">Voir mon cv</a> 
+            <br><br>
+                <a href="file:///C:/xampp/htdocs/GitHub/Book/Mon_premier_site/liens_menus.html" OnClick="javascript:window.print()">Imprimer la page</a>
+            <br><br>
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" id="facebookv" alt="Logo de Facebook"></a>
+            <br><br>
+                Cliquez <a href="file:///C:/xampp/htdocs/GitHub/Book/Mon_premier_site/index.html">ici</a> pour vous rendre à la page structure.            
+            </p>
+        </section>
+
+        <section class="menu">
+                <h3 id="amenu"> Les menus</h3>
+                <br><br>
+                <a href="#"> Accueil</a>
+                <a href="#"> Parcours</a>
+                <a href="#"> Réalisation</a>
+                <a href="#"> Contact</a>
+        </section>
+
+        <section class="menuderoulant">
+                <h3 id="amenuderoulant"> Les menus déroulants</h3>
+                <br><br>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Cours</a>
+                        <ul>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Java Script</a></li>
+                            <li><a href="#">PHP</a></li>
+                            <li><a href="#">MySQL</a></li>
+                        </ul>
+                    </li>  
+                    <li><a href="#">WEB</a>
+                        <ul>
+                            <li><a href="https://debray-jerome.developpez.com/articles/geometrie-avec-css/">Géométrie</a></li>
+                            <li><a href="https://www.w3schools.com/js/js_date_methods.asp">JS objets</a></li>
+                            <li><a href="https://fontawesome.com/">Fontawesome</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Profile</a>
+                    <ul>
+                        <li><a href="#">Téléchargement
+                            <br>CV</a></li>
+                        <li><a href="#">Téléchargement
+                            <br> Porte-folio </a></li>
+                    </ul></li>
+                    <li><a href="#">A propos</a></li>                                     
+                </ul>
+        </section>
+
+    </main>
+
+    <a href="#logo">
+        <button type="button">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"> </i>
+        </button>
+    </a>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

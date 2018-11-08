@@ -236,9 +236,11 @@ section .feeverte{
 
 section.sirene{
     width: 800px;
+    margin: auto;
 }
 
 .image{
+    text-align: center;
     width: 250px;
     margin-left: 100px;
     border: 4px solid black;
@@ -252,7 +254,7 @@ section.sirene{
 
 .rotation{
     width: 250px;
-    margin-left: 100px;
+    margin: auto;
     display: block;
     border: 4px solid black;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -506,7 +508,338 @@ section.sirene{
 .pays:hover, .continent:hover{
     font-size:30px;
 }
+/************************* FIN DES LISTES ******************************/
 
+/************************* LIENS ET MENUS ******************************/
+
+.ancre{
+    text-align: center;
+    text-decoration: none;
+}
+
+.ancre hr{
+    color: #051404;
+    margin: 30px;
+}
+
+.ancre a{
+    border: 1px solid #43fa2e;
+    background-color: #093f05;
+    color: #43fa2e;
+    border-radius: 7px;
+    padding: 5px 20px;
+    margin:30px;
+}
+
+#rs a{
+    text-decoration: none;
+    color: #1bc404;
+    transition-duration: 0.5s;
+}
+a:hover{
+    font-size:20px;
+    color:rgb(207, 250, 178);
+}
+
+p{
+    color: rgb(181, 253, 147);
+}
+
+#facebookv{
+    width:70px;
+    height: auto;
+    transition-duration: 0.5s;
+}
+#facebookv:hover{
+    transform: scale(1.5);
+    color:rgb(207, 250, 178);
+}
+
+.menu{
+    color: #051404;
+    margin: 30px;
+    text-align: center;
+}
+
+#amenu{
+    text-align: left;
+}
+
+.menu a{
+    border: 1px solid #43fa2e;
+    background-color: #093f05;
+    color: #43fa2e;
+    border-radius: 7px;
+    padding: 5px 20px;
+    margin:30px;    
+}
+
+.menu a:hover{
+    font-size:20px;
+    color:rgb(207, 250, 178);
+}
+
+.menuderoulant{
+    color: #051404;
+    margin: 30px 30px 250px 30px;
+    text-align: center; 
+}
+
+    .menuderoulant ul li{
+        list-style: none;
+        display: inline-block;
+        position: relative;
+    }
+
+        .menuderoulant ul li > ul{
+            list-style: none;
+            display: none;
+            background-color: #051404;
+            border: 2px solid #43fa2e;
+            border-radius: 7px;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            width: 200px;
+            transform: translate(-12%);
+        }
+
+        .menuderoulant ul li:hover ul{
+            display: inline-block;
+        }
+
+            .menuderoulant ul li > ul li{
+                list-style: none;
+                display: block;
+                border-bottom: 1px solid #43fa2e;
+                /* margin: 15px 0; */
+                padding: 15px 0;
+
+            }
+            .menuderoulant ul li > ul li:hover{
+                background-color: #093f05;
+
+            }
+
+                .menuderoulant ul li > ul li a{
+                    background-color: transparent;
+                    border: none;
+                    transition: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                    .menuderoulant ul li > ul li a:hover{
+                        font-size:100%;
+                    }
+
+    #amenuderoulant{
+        text-align: left;
+
+    }
+
+        .menuderoulant a{
+            border: 1px solid #43fa2e;
+            background-color: #093f05;
+            color: #43fa2e;
+            border-radius: 7px;
+            padding: 5px 20px;
+            margin:30px;
+        }
+/************************* FIN LIENS ******************************/
+
+/************************* TABLEAUX ******************************/
+caption i{
+    display: none;
+}
+
+table{
+    border: 3px solid #051404;
+    text-align: center;
+    margin: auto;
+    color: rgb(207, 250, 178);
+    border-collapse: collapse;
+}
+
+tfoot td, thead th{
+    background-color: #0c5807;
+    width: 180px;
+    border: 1px solid #051404; 
+}
+
+tbody{
+    background-color: #139202;
+}
+tbody td{
+    border: 1px solid #051404;
+ 
+}
+
+/************************* FIN TABLEAUX ******************************/
+
+/************************* FORMULAIRES ******************************/
+
+form{
+    border: 2px  solid #051404;
+    border-radius: 14px;
+    background-color: #093f05;
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+label{
+    color:rgb(207, 250, 178);
+    margin: 10px 0;
+    width: 50%;
+    display: inline-block;
+}
+
+
+form input:nth-of-type(5){
+    border: none;
+    border: 1px solid #139202;
+}
+form input:nth-of-type(8){
+    border: none;
+    border: 1px solid #139202;
+}
+
+input:nth-of-type(7){
+    border: none;
+    border: 1px solid #139202;
+}
+
+label [for="question"]{
+    width: 10%;
+}
+
+label .label_message{
+
+}
+
+textarea{
+    resize: none;
+    display: inline-block;
+
+}
+
+/************************ FIN FORMULAIRES ***************************/
+
+/************************* ANIMATION ******************************/
+
+.infobulle{
+    background-color: #051404;
+    border: 2px solid #0c5807;
+    width: 65%;
+    height: 300px;
+    margin: auto;
+    box-shadow: 0 0 50px #0c5807 inset 
+}
+
+.infobulle a{
+    color: #1bc404;
+    text-shadow: 0 -2px 0 #139202;
+    text-align: center;
+    border-radius: 3px;
+    margin: 50px;
+    display: block;
+    transition-duration: 0.5s;
+}
+
+.infobulle a:hover{
+    background-color: #093f05;
+    text-shadow: 0 1px 2px #051404;
+    box-shadow: 0 1px 0 #38a02a;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 100%;
+}
+
+.infobulle a span{
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background-color: #43fa2e;
+    opacity: 0;
+    color: #051404;
+    transform: scale(0) rotateZ(-12deg);
+    transition: .25s;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #38a02a;
+}
+
+.infobulle a:hover span{
+    opacity: 1;
+    transform: scale(1) rotateZ(0);
+}
+.infobulle a span:before{
+    content:'';
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    border-bottom: 6px solid rgba(0,0,0,.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+/*
+.infobulle{
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+    background: slategray;
+    box-shadow: 0 0 50px #222 inset effet à l'intérieur de l'élément
+}
+.infobulle p{
+    text-align: center;
+    padding-top: 30px;
+}
+.infobulle a{
+    color: white;
+    text-shadow: 0 -2px 0 black;
+    text-decoration: none;
+    border-radius: 3px;
+    padding:5px 15px;
+}
+.infobulle a:hover{
+    text-shadow: 0 1px 2px black;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4);
+    color: white;
+}
+.infobulle a span{
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background: rgba(0,0,0,0.9);
+    opacity: 0;
+    color: pink;
+    transform: scale(0) rotateZ(-12deg);
+    transition: .25s;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+.infobulle a:hover span{
+    opacity: 1;
+    transform: scale(1) rotateZ(0);
+}
+.infobulle a span:before{
+    content:'';
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    border-bottom: 6px solid rgba(0,0,0,.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+*/
+/************************* FIN ANIMATION ******************************/
 
 /************************* BAS DE PAGE ******************************/
 button{
@@ -527,6 +860,7 @@ button{
 footer{
     background-color: black;
     height: 30px;
+    clear: both;
 }
 
 

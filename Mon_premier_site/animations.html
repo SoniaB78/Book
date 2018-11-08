@@ -1,21 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="zoning html css">
+    <meta name="author" content="Sonia Bougamha">
+    <meta name="description" content="Tout un récapitulatif sur CSS et HTML">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- fontawesome en ligne-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font family en ligne-->
+    <link rel="stylesheet" <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!--Font awesome en local-->
+    <title>Mon premier site</title>
+</head>
+
 <body>
-        <header>
-             <div id="logo">
-                 <a href="index.html" target="blank"> <img src="img/logo_360.png" alt="logo html css"></a>
-             </div>
-     
-             <h1>Mon premier site en HTML & CSS</h1>
-     
-             <div id="rs">
-                 <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                 <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                 <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-             </div>
-             <div class="clear"></div>
-        </header>
-     
-         <nav>
-             <a href="index.html" >Index</a>
+    <header>
+        <div id="logo">
+            <a href="index.html" target="blank">
+                <img src="img/logo_360.png" alt="logo html css">
+            </a>
+        </div>
+
+        <h1>Mon premier site en HTML & CSS</h1>
+
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+        <nav>
+             <a href="index.html">Index</a>
              <a href="textes.html">Texte</a>
              <a href="selecteurs.html">Selecteurs</a>
              <a href="images.html">Images</a>
@@ -24,8 +55,54 @@
              <a href="listes.html">Listes</a>
              <a href="liens_menus.html">Lien & menus</a>
              <a href="tableaux.html">Tableaux</a>
-             <a href="formulaires.html">Formulaires</a>
+             <a href="formulaires.html" class="activ">Formulaires</a>
              <a href="multimedias.html">Multimedia</a>
-             <a href="animations.html" class="activ">Animation</a>
+             <a href="animations.html">Animation</a>
              <a href="fancy_box.html">Fancy Box</a>
          </nav>
+
+        <main>
+
+            <h2>ANIMATIONS</h2>
+            <section>
+                <h3>Infobulle</h3>
+
+                <div class="infobulle">
+                    <a href="#">Passez la souris! <span>Et un popup!</span></a>
+                    <a href="#">Là aussi! <span>Et de deux popup!</span></a>
+                    <a href="#">Et encore <span>Et un troisième!</span></a>
+                </div>
+            </section>
+
+            <section>
+                <h3>Effet de survol avec transition et filtre CSS</h3>
+
+            </section>
+
+            <section>
+                <h3></h3>
+
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <a href="#logo">
+                <button type="button">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"> </i>
+                </button>
+            </a>
+            
+    <footer>
+
+    </footer>
+</body>
+        
+</html>

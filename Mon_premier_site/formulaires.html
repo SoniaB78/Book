@@ -1,20 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="zoning html css">
+    <meta name="author" content="Sonia Bougamha">
+    <meta name="description" content="Tout un récapitulatif sur CSS et HTML">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- fontawesome en ligne-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font family en ligne-->
+    <link rel="stylesheet" <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!--Font awesome en local-->
+    <title>Mon premier site</title>
+</head>
+
 <body>
-        <header>
-             <div id="logo">
-                 <a href="index.html" target="blank"> <img src="img/logo_360.png" alt="logo html css"></a>
-             </div>
-     
-             <h1>Mon premier site en HTML & CSS</h1>
-     
-             <div id="rs">
-                 <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                 <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                 <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-             </div>
-             <div class="clear"></div>
-        </header>
-     
-         <nav>
+    <header>
+        <div id="logo">
+            <a href="index.html" target="blank">
+                <img src="img/logo_360.png" alt="logo html css">
+            </a>
+        </div>
+
+        <h1>Mon premier site en HTML & CSS</h1>
+
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+        <nav>
              <a href="index.html">Index</a>
              <a href="textes.html">Texte</a>
              <a href="selecteurs.html">Selecteurs</a>
@@ -29,3 +60,73 @@
              <a href="animations.html">Animation</a>
              <a href="fancy_box.html">Fancy Box</a>
          </nav>
+
+        <main>
+            <form method="post" action="url de destination" enctype="multipart/form-data">
+                
+                <label for="Pseudo" class="formleft"> Pseudo *</label>
+        
+                <input type="text" name="pseudo" placeholder="Rentrez votre Pseudo" required>
+                <br>
+
+                <label for="prenom"> Prénom </label>
+        
+                <input type="text" name="prenom" placeholder="Votre prénom"><br />
+        
+        
+                <label for="mdp"> Mot de passe *</label>
+        
+                <input type="password" name="mdp" placeholder="Votre mot de passe" required><br />
+                           
+                <label for="email">Email</label>
+        
+                <input type="email" name="email" placeholder="Votre e-mail"> <br />
+        
+                <!--fichier-->
+                <label for="cv">CV</label>
+                <input type="file" name="cv"><br/>
+        
+                <!-- cases à cocher-->
+                <label for="question"> Qui préférez vous écouter?</label>
+                <p>
+                    <input type="checkbox" name="question">Metalica
+
+                    <input type="checkbox" name="question"> Beyoncé
+
+                    <input type="checkbox"name="question" checked> JUL
+                </p>
+
+                <label for="code_postal"> Code Postal </label>
+        
+                <input type="text" name="code_postal" placeholder="Votre code postal"><br />
+        
+
+                <label class="label_message" for="message"> Message</label>
+
+                <textarea name="message" rows="6" cols="40" placeholder="Laissez nous un message =)"></textarea><br />
+                <!-- rows=nombre de lignes -cols= nombre de colones/caractères-->
+        
+
+                <input type="submit" name="inscription" value=" Envoyer">
+        
+
+                <input type="reset" name="annuler" value="Annuler">
+        
+                    
+            </form>
+
+
+        </main>
+
+        <a href="#logo">
+                <button type="button">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"> </i>
+                </button>
+            </a>
+            
+    <footer>
+
+    </footer>
+</body>
+        
+</html>
