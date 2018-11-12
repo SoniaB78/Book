@@ -741,7 +741,7 @@ textarea{
 
 .infobulle a{
     color: #1bc404;
-    text-shadow: 0 -2px 0 #139202;
+    text-shadow: 0 -2px 0 #000000;
     text-align: center;
     border-radius: 3px;
     margin: 50px;
@@ -751,7 +751,8 @@ textarea{
 
 .infobulle a:hover{
     background-color: #093f05;
-    text-shadow: 0 1px 2px #051404;
+    color: #051404;
+    text-shadow: 0 1px 2px #7aff0d;
     box-shadow: 0 1px 0 #38a02a;
     width: auto;
     padding: 10px 20px;
@@ -776,6 +777,7 @@ textarea{
     opacity: 1;
     transform: scale(1) rotateZ(0);
 }
+
 .infobulle a span:before{
     content:'';
     position: absolute;
@@ -786,6 +788,42 @@ textarea{
     border-right: 6px solid transparent;
 }
 
+/* Les logos de marques*/
+.imgeffets{
+    width: 320px;
+    height: 320px;
+    margin: 70px auto;
+}
+ 
+ .imgeffets li{
+    list-style: none;
+    float: left;
+    width: 141px;
+    height: 150px;
+    margin: 5px;
+ }
+ 
+ .imgeffets li:nth-child(3){
+    clear: both;
+ }
+ 
+ .imgeffets img{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    box-shadow: 0 0 3px black;
+    transition: .5s cubic-bezier(0,3,.4,1);
+ }
+ 
+ .imgeffets li:hover img{
+    z-index: 2;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px black;
+ }
+ 
+ .imgeffets:hover li:not(:hover) img{
+    filter: grayscale(1) blur(8px);
+ }
 /*
 .infobulle{
     height: 250px;
@@ -839,6 +877,173 @@ textarea{
     border-right: 6px solid transparent;
 }
 */
+
+/* Le menu déroulant*/
+/* 
+#menurotate{
+    height: 360px;
+    width: 576px;
+    margin: 100px auto;
+    background-color:  #093f05;
+    position: relative; /*absolute si par rapport u body sauf si son parent est en relative
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#menurotate .masque{
+    position: absolute;
+    z-index: 50;
+    width: 585px;
+    height: 135px;
+    top: 0;
+    left: 0;
+    background-color:#093f05;
+}
+
+#menurotate .ombre{
+    position: absolute;
+    z-index: 40;
+    width: 300px;
+    height: 6px;
+    box-shadow: 0px 100px 3px black;
+    border-radius: 75px / 3px; /*rayon horizontaux / rayon verticaux
+    top: 32px;
+    left: 142px;
+}
+
+#menurotate dl{
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 155px;
+    color:white;
+    text-align: center;
+    background-color: #30b921;
+}
+
+#menurotate dt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+}
+
+#rotate dd{
+    transform:rotate(180deg);
+}
+
+#menurotate dd a{
+    display: block;
+    height: 24px;
+    padding: 3px 0;
+    color: black;
+    text-decoration: none;
+}
+
+#menurotate dd a:hover{
+    background: greenyellow;
+}
+
+#menurotate dl:hover{
+    transform: rotate(-180deg);
+    animation: bounceIn 0.7s ease-in-out;
+}
+
+@keyframes bounceIn{
+    from{transform: rotate(0deg);}
+    75%{transform: rotate(-200deg);}
+    90%{transform: rotate(-175deg);}
+    to{transform: rotate(-180deg);}
+}
+
+@keyframes bounceIn{
+    from{transform: rotate(0deg);}
+    0%{transform: rotate(-180deg);}
+    10%{transform: rotate(-165deg);}
+    to{transform: rotate(-360deg);}
+} */
+#menuRotate{
+	height: 360px;
+	width: 576px;
+	margin: 100px auto;
+	background: #093f05;
+	position: relative; /*absolute en foncction du body sauf si son parent est en relative*/
+	overflow: hidden;
+	border: 2px solid rgb(0, 0, 0);
+}
+#menuRotate .masque{
+	position: absolute;
+	z-index: 50;
+	width: 585px;
+	height: 135px;
+	top: 0;
+	left: 0;
+	background-color:#093f05;
+}
+#menuRotate .ombre{
+	position: absolute;
+	z-index: 40;
+	width: 300px;
+	height: 6px;
+	box-shadow: 0px 100px 3px black;
+	border-radius: 75px / 3px; /*rayon horizontaux / rayon verticaux*/
+	top: 32px;
+	left: 142px;
+}
+#menuRotate dl{
+	position: relative;
+	top: 0;
+	left: 50%;
+	margin-left: -75px;
+	width: 150px;
+	height: 155px;
+	color: black;
+	text-align: center;
+	background: greenyellow;
+	border-radius: 4px;
+	box-shadow: 0 0 6px rgba(0,0,0,0.7);
+	transform-origin: 50% 120px;
+	animation: bounceOut 0.7s ease-in-out;
+}
+#menuRotate dt{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	padding-top: 5px;
+}
+#menuRotate dd{
+	transform: rotate(180deg);
+}
+#menuRotate dd a{
+	display: block;
+	height: 24px;
+	padding: 3px 0;
+	color: black;
+	text-decoration: none;
+}
+#menuRotate dd a:hover{
+	background: rgba(255,255,255,0.1);
+}
+#menuRotate dl:hover{
+	transform: rotate(-180deg);
+	animation: bounceIn 0.7s ease-in-out;
+}
+@keyframes bounceIn{
+	from{transform: rotate(0deg);}
+	75%{transform: rotate(-200deg);}
+	90%{transform: rotate(-175deg);}
+	to{transform: rotate(-180deg);}
+}
+@keyframes bounceOut{
+	from{transform: rotate(0deg);}
+	0%{transform: rotate(-180deg);}
+	10%{transform: rotate(-165deg);}
+	to{transform: rotate(-360deg);}
+}
 /************************* FIN ANIMATION ******************************/
 
 /************************* BAS DE PAGE ******************************/
