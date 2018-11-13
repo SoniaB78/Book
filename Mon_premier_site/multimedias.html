@@ -1,3 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="zoning html css">
+    <meta name="author" content="Sonia Bougamha">
+    <meta name="description" content="Tout un récapitulatif sur CSS et HTML">
+    <link rel="stylesheet" href="css/style.css"><!-- CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web" rel="stylesheet"> <!--Font family en ligne-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- fontawesome en ligne-->
+    <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> Font awesome en local-->
+    <title>Mon premier site</title>
+</head>
+
+<body>
+   <header>
+        <div id="logo">
+            <a href="index.html" target="blank"> <img src="img/logo_360.png" alt="logo html css"></a>
+        </div>
+
+        <h1>Mon premier site en HTML & CSS</h1>
+
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="clear"></div>
+   </header>
+
+    <nav>
+        <a href="index.html">Index</a>
+        <a href="textes.html">Texte</a>
+        <a href="selecteurs.html">Selecteurs</a>
+        <a href="images.html">Images</a>
+        <a href="positions.html">Positions</a>
+        <a href="zonings.html">Zonings</a>
+        <a href="listes.html">Listes</a>
+        <a href="liens_menus.html">Lien & menus</a>
+        <a href="tableaux.html">Tableaux</a>
+        <a href="formulaires.html">Formulaires</a>
+        <a href="multimedias.html" class="activ">Multimedia</a>
+        <a href="animations.html">Animation</a>
+        <a href="fancy_box.html">Fancy Box</a>
+        <a href="explication.html">Explication</a>
+    </nav>
+
 <body>
         <header>
              <div id="logo">
@@ -28,4 +78,58 @@
              <a href="multimedias.html" class="activ">Multimedia</a>
              <a href="animations.html">Animation</a>
              <a href="fancy_box.html">Fancy Box</a>
+             <a href="explication.html">Explication</a>
          </nav>
+
+
+         <main>
+
+            <h2>Multimédia</h2>
+
+            <section class="videofond">
+                <h3>Vidéo en fond importée depuis un dossier</h3>
+                <div class="videotext">
+                    <video autoplay loop>
+                        <source src="video/odetosleep.mp4"></source>
+                    </video>
+                    <p>Cette musique est une tuerie!
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam officiis iure accusamus earum consequuntur temporibus nostrum ipsam pariatur, dolore quasi, placeat voluptate. Doloribus, rem nemo. Repudiandae saepe unde provident!
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Vidéo Youtube</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4ust2kgtvD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <section>
+                <h3>Audio</h3>
+                <div class="audio">
+                    <p>format mp3</p>
+                    <audio src="audio/17 Karate.mp3" controls></audio>
+                    <p>format ogg</p>
+                    <audio src="img/son.ogg" controls></audio>
+                    </div>
+            </section>
+
+            <section>
+                    <h3>Cartes Google Map</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25931.297555827252!2d139.67511662691743!3d35.66685128263624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2sShibuya%2C+Tokyo%2C+Japon!5e0!3m2!1sfr!2sfr!4v1542121042609" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+         </main>
+
+    <a href="#logo">
+        <button type="button">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"> </i>
+        </button>
+    </a>
+   
+    <footer>
+
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="zoning html css">
+    <meta name="author" content="Sonia Bougamha">
+    <meta name="description" content="Tout un récapitulatif sur CSS et HTML">
+    <link rel="stylesheet" href="css/style.css"><!-- CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Titillium+Web" rel="stylesheet"> <!--Font family en ligne-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- fontawesome en ligne-->
+    <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> Font awesome en local-->
+    <title>Mon premier site</title>
+</head>
+
+<body>
+   <header>
+        <div id="logo">
+            <a href="index.html" target="blank"> <img src="img/logo_360.png" alt="logo html css"></a>
+        </div>
+
+        <h1>Mon premier site en HTML & CSS</h1>
+
+        <div id="rs">
+            <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="clear"></div>
+   </header>
+
+    <nav>
+        <a href="index.html">Index</a>
+        <a href="textes.html">Texte</a>
+        <a href="selecteurs.html">Selecteurs</a>
+        <a href="images.html">Images</a>
+        <a href="positions.html">Positions</a>
+        <a href="zonings.html">Zonings</a>
+        <a href="listes.html">Listes</a>
+        <a href="liens_menus.html">Lien & menus</a>
+        <a href="tableaux.html">Tableaux</a>
+        <a href="formulaires.html">Formulaires</a>
+        <a href="multimedias.html">Multimedia</a>
+        <a href="animations.html">Animation</a>
+        <a href="fancy_box.html">Fancy Box</a>
+        <a href="explication.html" class="activ">Explication</a>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Les Fig-Caption</h3>
+                <div class="text">
+
+                <ol>
+                    <li>
+                    Un navigateur n'implémentant pas ces éléments  affichera le contenu au format brut, sans présentation particulière.
+                    <br>
+                    Par défaut, le style appliqué est <strong><u>display: block</u></strong> sur deux éléments, ainsi que les marges sur <strong>la figure</strong>.
+                    <!-- Sous IE9 il faudra appliquer un shim pour pouvoir leur appliquer un style bloc.-->
+                    </li>
+                    <br>
+
+                    <li>
+                        Applications sur le Web, utilisation sans légende.
+                        <br>
+                        Il est tout à fait envisageable d'insérer <strong> "figcaption"</strong> avant l'image voire de ne pas le mettre du tout car il est facultatif.
+                            
+                        <figure>
+                        <img src="img/figues.png" alt="Des 'figues caption' ">
+                        </figure>
+                        Les différents éléments peuvent être stylisiés en CSS.
+                    </li>
+                    <br>
+
+                    <li>
+                        Une image avec sa légende.
+                        <br>
+                        Dans son usage le plus courant, l'élément <strong>"figure"</strong> contient une image puis sa légende <strong>"figcaption"</strong>.
+                        <br>
+
+                        <figure>
+                            <img src="img/legende.png" alt="JE SUIS UNE LEGENDE">
+                            <figcaption>Avez - vous vu ce film? </figcaption> 
+                        </figure>
+                    </li>
+                    <br>
+
+                    <li>
+                        Utilisation avancée.
+                        <br>
+                        Il est prévu de pouvoir regrouper une liste d'images et ainsi les lier à l'aide d'un unique élément :<strong>"figcaption"</strong>.
+
+                        Une liste d'images:
+                        <figure>
+                            <img src="img/fig1.png" alt="Des figues!">
+                            <img src="img/fig2.png" alt="Encore des figues!!">
+                            <img src="img/fig3.png" alt="Et puis...des figues!">
+                            <figcaption>Des figues oui... mais sous différents formes!</figcaption>
+                        </figure>
+                    </li>
+                    <br>
+                
+                <li>
+                    Un bloc de code. <br>
+                    Les illustrations ne sont pas les seuls éléments HTML à pouvoir profiter de descriptions <strong>"figure"</strong> et <strong>"figcaption"</strong>. 
+                    <br>
+                    On peut également les appliquer à un bloc de code source.
+
+                    <figure>
+                        <pre>
+                            <code>
+                                <form method="post" action="url de destination" enctype="multipart/form-data">
+                
+                                <label for="Pseudo" class="formleft"> Pseudo *</label>
+                                
+                                <input type="text" name="pseudo" placeholder="Rentrez votre Pseudo" required>
+                                <br>
+                        
+                                <label for="prenom"> Prénom </label>
+                                
+                                <input type="text" name="prenom" placeholder="Votre prénom"><br />
+                                
+                                
+                                <label for="mdp"> Mot de passe *</label>
+                                
+                                <input type="password" name="mdp" placeholder="Votre mot de passe" required><br />
+                                                   
+                                <label for="email">Email</label>
+                                
+                                <input type="email" name="email" placeholder="Votre e-mail"> <br />
+                                
+                                <!--fichier-->
+                                <label for="cv">CV</label>
+                                <input type="file" name="cv"><br/>
+                                
+                                <!-- cases à cocher-->
+                                <label for="question"> Qui préférez vous écouter?</label>
+                                    <p>
+                                        <input type="checkbox" name="question">Metalica
+                        
+                                        <input type="checkbox" name="question"> Beyoncé
+                        
+                                        <input type="checkbox"name="question" checked> JUL
+                                    </p>
+                        
+                                <label for="code_postal"> Code Postal </label>
+                                
+                                <input type="text" name="code_postal" placeholder="Votre code postal"><br />
+                                
+                        
+                                <label class="label_message" for="message"> Message</label>
+                        
+                                <textarea name="message" rows="6" cols="40" placeholder="Laissez nous un message =)"></textarea><br />
+                                <!-- rows=nombre de lignes -cols= nombre de colones/caractères-->
+                                
+                        
+                                <input type="submit" name="inscription" value=" Envoyer">
+                                
+                        
+                                <input type="reset" name="annuler" value="Annuler">
+                                
+                                            
+                                </form>
+                            </code>
+                        </pre>
+                    </figure>
+                </li>
+                <br>
+
+                <li>
+                    Une vidéo. 
+                    <br>
+                    Le même principe est appliquée à la balise <strong>"vidéo"</strong>.
+
+                    <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JdagGAxAow0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <figcaption>Vas te renseigner</figcaption>
+                        </figure>
+                    </li>
+                    <br>
+
+                    <li>
+                        Les diagrammes et autres graphes dynamiques.
+                        <br>
+                        Du côté de <strong> Canvas et SVG</strong>, le document peut également en profiter. HTML 5 ne compte pas que <strong>"figure"</strong> et <strong>"figcaption"</strong> dans ses nouveaux éléments mais également <strong>"canvas"</strong>, qui vous permettra de créer en association avec JavaScript, des diagrammes, des graphiques, et tout ce qu'une surface de dessin permet ddde faire.
+                        <br>
+                        A ce sujet, consultez l'article de David Rousset : Introduction aux APIs graphiques d'HTML 5: SVG & Canva.
+                    </li>
+                    <br>
+                    
+                    <li>
+                    Choisir <strong>"figure"</strong> ou <strong>"aside"</strong>?
+                    Ces deux éléments sont des unités de contenu mais n'ont pas le même rôle sémantique.
+                    Tandis qu'<strong>"aside"</strong> n'e'st pas essentiel pour la compréhension de la page <em>(il ne doit être qu'un apport tangentiel)</em>, <strong>"figure"</strong> est lié à celle-ci: il transmet un contenu pertinent, lié au contenu principal, comme le serait une image classique.
+                    <br>
+                    Nous pouvons donc résumer la chose comme suit:
+                    <br>
+                    <strong>"aside"</strong>: son contenu est périphérique à la page, et son absence ne doit pas géner la compréhension de celle-ci.
+                    <br>
+                    <strong>"Figure"</strong>: son contenu contribue à donner du sens et de la compréhensibilité à la page et son emplacement n'est pas détérminant.
+                    <br>
+                    <strong>Illustrations légendées</strong>: Inaugurées avec HTML 5, les éléments <strong>"figure"</strong> et <strong>"figcaption"</strong> fonctionnent de concert pour associer une légende à une illustration ou autre média.
+
+                    <figure>
+                            <img src="" alt="">
+                            <figcaption></figcaption>
+                    </figure>
+
+                    Elément <strong>"figure"</strong>:
+                    <br>
+                    "Figure"est une unité de contenu, c'est à dire que cet élément sert de conteneur dans lequel s'insèrent divers éléments comme des images, des schémas, des vidéos, des tableaux ou encore des blocs de code.
+                    <br>
+                    L'objectif est de lier ce contenu à une légende, définie par l'élément "figcaption" <em>(facultatif)</em>.
+                    <br>
+                    Elément <strong>"figcaption"</strong>:
+                    <br>
+                    Enfant direct de "figure", son rôle est de légender son parent, sous forme de texte et/ou de liens.
+                    Il peut se placer avant ou après le contenu principal de "figure".
+                    </li>                       
+                </ol>
+            </div>
+
+        </section>
+    </main>
+
+
+    <a href="#logo">
+        <button type="button">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"> </i>
+        </button>
+    </a>
+
+
+
+    
+    <footer>
+
+    </footer>
+</body>
+
+
+</html>
