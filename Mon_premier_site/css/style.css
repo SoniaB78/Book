@@ -774,7 +774,7 @@ textarea{
     box-shadow: 0 0 2px #38a02a;
 }
 
-.infobulle a:hover span{
+.infobulle a:hover ~ span{
     opacity: 1;
     transform: scale(1) rotateZ(0);
 }
